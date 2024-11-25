@@ -13,7 +13,7 @@ var globalNameMatch;
 var globalUrlMatch;
  
 function validateNameInput(element) {
-  var regex = /[a-zA-Z]{3,}/;
+  var regex = /^[a-zA-Z]{3,}/;
   var matchedName = regex.test(element.value);
   globalNameMatch = matchedName;
   if (matchedName) {
@@ -36,9 +36,16 @@ function validateUrlInput(element) {
     element.classList.add("is-invalid");
   }
 }
-
+var norepeatedName = true
 function addBookmark() {
-  if (globalNameMatch && globalUrlMatch) {
+    for(var i =0;i < bookmarkList.length ; i++){
+        if(bookmarkNameInput.value == bookmarkList[i].name){
+             norepeatedName = false   
+        }
+    }
+    
+    
+  if (globalNameMatch && globalUrlMatch && norepeatedName) {
     bookmark = {
       name: bookmarkNameInput.value,
       url: websiteUrlInput.value,
@@ -57,7 +64,7 @@ function addBookmark() {
             `,
     });
   }
-
+norepeatedName = true
   
 }
 
