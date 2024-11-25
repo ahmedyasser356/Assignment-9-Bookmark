@@ -67,5 +67,7 @@ h3 {
     text-align: left;
 }
 
- 
+ .vertical-middle{
+    vertical-align: middle;
+ }
  
