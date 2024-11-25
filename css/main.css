@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #ffc261;
+}
+body {
+  background-color: #f7eddf;
+  font-family: "PT Sans Caption", sans-serif;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  position: relative;
+}
+h1::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  height: 30%;
+  width: 100%;
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.5s;
+}
+h1:hover::before {
+  height: 70%;
+}
+.section-2 {
+  border-bottom: black 2px dotted;
+  border-top: black 2px dotted;
+}
+h3 {
+  font-family: "Righteous", cursive;
+  font-size: 23px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.svg-inline--fa.fa-bookmark.one {
+  color: #3ca55c;
+}
+.svg-inline--fa.fa-bookmark.two {
+  color: #b5ac49;
+}
+.input:focus {
+  box-shadow: 0px 0px 0px 4px #ffc26193;
+  border-color: var(--main-color);
+}
+.td-index,.td-name{
+    vertical-align: middle;
+}
+.td-name{
+    text-transform: capitalize;
+}
+.form{
+    width: 90%;
+    margin: auto;
+}
+.valid-1{
+    text-align: left;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.left{
+    text-align: left;
+}
+
+ 
+ 

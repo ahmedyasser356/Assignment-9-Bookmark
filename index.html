@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <title>Bookmark</title>
+    <!--========== favicon ==========-->
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
+    <!--========== font Awesome css ==========-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--========== bootstrap5 css ==========-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--========== main css ==========-->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <section class="container py-2 d-flex justify-content-center">
+      <h1 class="text-center my-5 display-5">Bookmarker</h1>
+    </section>
+    <section class="section-2 py-3 container ">
+      <h3 class="text-center mb-4 mt-2"><i class="one fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="two fa-solid fa-bookmark"></i></h3>
+      <div class="form">
+        <div class="mb-3">
+            <label for="bookmarkName" class="fw-bold form-label"><i class="fa-solid fa-book-bookmark me-2"></i> Site Name</label>
+            <input type="text" oninput="validateNameInput(this)" class="form-control input" id="bookmarkName" placeholder="Bookmark Name">
+          </div>
+          <div class="mb-3">
+            <label for="websiteUrl" class="form-label fw-bold"><i class="fa-solid fa-link me-2"></i> Site URL</label>
+            <input type="text" oninput="validateUrlInput(this)" class="form-control input" id="websiteUrl" placeholder="Website URL">
+          </div>
+          <div class="text-center">
+            <button class="btn px-5 mt-3  mb-2 btn-primary">Submit</button>
+          </div>
+      </div>
+    </section>
+    <section class="container display-table py-3 pb-5">
+    <table class="table text-center">
+        <thead>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+    </section>
+    
+     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--========== font awesome js ==========-->
+    <script src="js/all.min.js"></script>
+    <!--========== bootstrap5 js ==========-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--========== main js ==========-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
