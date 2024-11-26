@@ -80,9 +80,9 @@ function display(list) {
                 }" class="text-decoration-none text-black"><button class="btn btn-success"><i class="fa-solid fa-eye"></i> Visit</button></a></td>
                 <td><button onclick="deleteBookmark(${i})" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Delete</button></td>
             </tr>`;
-
-    document.querySelector("tbody").innerHTML = textHtml;
+       
   }
+  document.querySelector("tbody").innerHTML = textHtml;  
 }
 function clearForm() {
   bookmarkNameInput.value = "";
